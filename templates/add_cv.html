@@ -1,0 +1,27 @@
+{% extends "start_page.html" %} {% block body %}
+
+
+    {% if session.logged_in %}
+        <dt>Имчик : {{ name }}</dt>
+        <dt>Фамчик: {{ surname }}</dt>
+        <form action="{{ url_for('add_cv') }}" method=post class=add-resume>
+            <dl>
+                <dt>коротко нафиг тебе эта ризюминка?)</dt>
+                <dd><textarea name=info rows=6 cols=42></textarea>
+
+                <dt>Опыт работы какой у тебя</dt>
+                <dd><textarea name=experience rows=6 cols=42></textarea>
+
+                <dt>че по скилам??
+                <dd><textarea name=skills rows=6 cols=42></textarea>
+
+                <dt>расскажи какое аниме смотришь
+                <dd><textarea name=other rows=6 cols=42></textarea>
+
+                <dd><input type=submit value="сабмитим сиви">
+            </dl>
+        </form>
+    {% endif %}
+
+
+{% endblock %}

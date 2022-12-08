@@ -1,0 +1,20 @@
+{% extends "start_page.html" %}
+{% block body %}
+
+    <h2>Register</h2>
+
+    {% if error %}
+        <p class=error><strong> ошибка лол бан! вот: </strong> {{ error }}
+    {% endif %}
+
+    <form action="{{ url_for('register') }}" method=post>
+        <dl>
+            <div class="input">вводи никник: <input type=text name=username size=15></div>
+            <div class="input">пппппароль: <input type=password name=password size=15></div>
+            <div class="input">ппппповтори: <input type=password name=password_confirm size=15></div>
+            <dd><input type=submit value="точно все проверил?)"></dd>
+        </dl>
+
+    </form>
+
+{% endblock %}

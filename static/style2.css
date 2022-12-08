@@ -1,0 +1,17 @@
+html {
+    text-align: center;
+    white-space: pre-line;
+    background: white;
+}
+
+dt {
+    font-size: 35px
+}
+
+h2 {
+    font-size: 45px
+}
+
+.name {
+    font-style: normal;
+}

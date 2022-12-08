@@ -1,0 +1,18 @@
+{% extends "start_page.html" %}
+{% block body %}
+
+    <h2>Логинимся лол ты че думал) </h2>
+
+    {% if error %}
+        <p class=error><strong> Ухх ошибина) :</strong> {{ error }}
+    {% endif %}
+
+    <form action="{{ url_for('login') }}" method=post>
+        <dl>
+            <div class="input"> юзирнеим)): <input type=text name=username size=15></div>
+            <div class="input"> парольчик: <input type=password name=password size=15></div>
+            <dd><input type=submit value="жоский вхход)"></dd>
+        </dl>
+    </form>
+
+{% endblock %}

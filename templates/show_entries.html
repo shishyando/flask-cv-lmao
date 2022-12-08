@@ -1,0 +1,21 @@
+{% extends "start_page.html" %} {% block body %}
+
+
+    <ul class=entries>
+
+        {% for entry in entries %}
+            <h2>{{ entry.info }}</h2>
+            <dt>
+                <a href="{{ url_for('view_cv', cv_id=entry.cv_id) }}">
+                    СМОТРЕТЬ РЕЗЮМЕ БЕСПЛАТНО БЕЗ РЕГИСТРАЦИИ И СМСС номер {{ entry.cv_id }}
+                </a>
+            </dt>
+
+
+        {% else %}
+            <em>Лол показывать то нечего ты хоть одно резюме сделай человек))</em>
+        {% endfor %}
+
+    </ul>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "start_page.html" %}
+{% block body %}
+
+    {% if session.logged_in %}
+        <div class="pdf-resume">
+            <h2>{{ info }}</h2>
+            <div>{{ surname }} {{ name }}</div>
+            <div>оппыт: {{ experience }}</div>
+            <div>скиллы: {{ skills }}</div>
+            <div>анимка: {{ other }}</div>
+        </div>
+        <form action="{{ url_for('view_cv', cv_id = cv_id) }}" method=post class=download-cv>
+            <div class="pdf-resume">Скачка пыдыфы: <input type=submit value=Download></div>
+        </form>
+    {% endif %}
+
+{% endblock %}

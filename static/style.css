@@ -1,0 +1,60 @@
+html {
+    text-align: center;
+}
+
+body {
+    font-family: "Arial Black";
+    background: deeppink;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+dl {
+    white-space: pre-line;
+}
+
+a {
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.page {
+    margin: 3em auto;
+    width: 45em;
+    border: 10px solid plum;
+    padding: 0.9em;
+    background: lightpink;
+}
+
+.hrefs {
+    white-space: pre-line;
+}
+
+.input {
+    white-space: pre-line;
+}
+
+.user_profile {
+    white-space: pre-line;
+    text-align: left;
+    padding: 0;
+    margin: 3em 50%;
+    line-height: 1.3em
+}
+
+.pdf-resume {
+    text-align: center;
+    white-space: pre-line;
+    background: white;
+    line-height: 1.3em
+}
+
+.flash {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    font-size: 30px;
+}
